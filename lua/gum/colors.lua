@@ -92,7 +92,8 @@ function M.setup(opts)
     -- stylua: ignore
     return {
       -- bg         = "#e1e4dc",
-      bg         = "#e2e4eb",
+      -- bg         = "#e2e4eb",
+      bg         = "#f6f5f4",
       fg         = "#2e2c2f",
 
       number     = "#99C7AC",
