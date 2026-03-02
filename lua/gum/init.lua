@@ -1,10 +1,8 @@
 local M = {}
 M.version = "0.1.0" -- x-release-please-version
 
--- stylua: ignore
 M.default = {
-  theme = vim.o.background, -- 'light' or 'dark' - defaults to vim.o.background if unset
-  background = "dark",
+  theme = vim.o.background, -- 'light' or 'dark' - defaults to vim.o.background
 
   transparent = false, -- transparent background
   terminal = false,    -- terminal colors
@@ -28,23 +26,15 @@ M.default = {
   on_highlights = function(hl, palette) end, -- apply your own highlights
 }
 
-M.config = nil
-
 M.setup = function(opts)
   M.config = vim.tbl_deep_extend("force", {}, M.default, opts or {})
 end
 
 M.load = function(opts)
-  opts = opts and vim.tbl_deep_extend("force", {}, M.config, opts or {}) or M.config
-  local bg = vim.o.background
-  local theme = opts.theme
+  opts = opts and vim.tbl_deep_extend("force", {}, M.config, opts) or M.config
 
-  if bg ~= theme then
-    if vim.g.colors_name == "gum-" .. opts.background then
-      opts.theme = bg
-    else
-      vim.o.background = theme
-    end
+  if vim.o.background ~= opts.theme then
+    vim.o.background = opts.theme
   end
 
   require("gum.highlights").set_highlights(opts)

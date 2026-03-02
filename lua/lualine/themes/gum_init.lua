@@ -1,6 +1,7 @@
 local M = {}
 
 function M.get(style)
+  style = style or { theme = vim.o.background }
   local colors = require("gum.colors").setup(style)
 
   return {
