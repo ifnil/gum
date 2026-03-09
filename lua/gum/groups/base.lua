@@ -100,8 +100,6 @@ function M.get(c, opts)
     qfFileName                  = { fg = c.blue },
     qfLineNr                    = { fg = c.number },
 
-
-
     LspReferenceText            = { bg = c.bg_visual, bold = true },
     LspReferenceRead            = { bg = c.bg_visual, bold = true },
     LspReferenceWrite           = { bg = c.bg_visual, bold = true },
@@ -110,7 +108,6 @@ function M.get(c, opts)
     LspInlayHint                = { fg = c.number, bg = c.none, italic = true },
     LspInfoBorder               = { fg = c.lightgreen, bg = c.bg_float },
     ComplHint                   = { fg = c.bg_float },
-
 
     DiagnosticError             = { fg = c.red0 },
     DiagnosticWarn              = { fg = c.yellow },
@@ -155,7 +152,6 @@ function M.get(c, opts)
     healthError                 = { fg = c.red },
     healthSuccess               = { fg = c.green1 },
     healthWarning               = { fg = c.yellow0 },
-
 
     diffAdded                   = { bg = c.diff.add, fg = c.git.add },
     diffRemoved                 = { bg = c.diff.delete, fg = c.git.delete },

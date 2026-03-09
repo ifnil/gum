@@ -35,22 +35,21 @@ function M.setup(opts)
       status_sep = "#1A2C37",
 
       bg_float   = "#1A2328",
-
       bg_visual  = "#223B49",
 
-      diff       = {
+      diff = {
         add    = "#435B55",
         change = "#23363B",
         delete = "#704C4E",
       },
 
-      git        = {
+      git = {
         add    = "#94C68B",
         change = "#6DAAE3",
         delete = "#D8464B",
       },
 
-      terminal   = {
+      terminal = {
         black          = "#1D282F",
         black_bright   = "#568270",
         white          = "#91A4AD",
@@ -69,7 +68,7 @@ function M.setup(opts)
         cyan_bright    = "#87CBB1",
       },
 
-      hbg        = {
+      hbg = {
         "#28403c",
         "#4b4c44",
         "#494342",
@@ -77,7 +76,7 @@ function M.setup(opts)
         "#504c5a",
         "#4e383b",
       },
-      hfg        = {
+      hfg = {
         "#6FA791",
         "#FFD7AA",
         "#F9ADA0",
@@ -86,7 +85,7 @@ function M.setup(opts)
         "#D2696C",
       },
 
-      none       = "NONE",
+      none = "NONE",
     }
   elseif opts.theme == "light" then
     -- stylua: ignore
@@ -124,22 +123,21 @@ function M.setup(opts)
       status_sep = "#B1D3BE",
 
       bg_float   = "#B4D0BF",
-
       bg_visual  = "#B3E0C5",
 
-      diff       = {
+      diff = {
         add    = "#9CC9B0",
         change = "#BBD3B6",
         delete = "#D3B6B6",
       },
 
-      git        = {
-        add    = "#6EBB30",
-        change = "#218BE8",
-        delete = "#FF0008",
+      git = {
+        add    = "#4acf8a",
+        change = "#4aa9cf",
+        delete = "#e89396",
       },
 
-      terminal   = {
+      terminal = {
         black          = "#C9E4D4",
         black_bright   = "#73A08D",
         white          = "#7A8386",
@@ -158,7 +156,7 @@ function M.setup(opts)
         cyan_bright    = "#00996D",
       },
 
-      hbg        = {
+      hbg = {
         "#b5d0b6",
         "#e2debb",
         "#d9d4bd",
@@ -166,7 +164,7 @@ function M.setup(opts)
         "#d0d4cb",
         "#cec8b4",
       },
-      hfg        = {
+      hfg = {
         "#73A08D",
         "#BF7021",
         "#BF442B",
@@ -175,7 +173,7 @@ function M.setup(opts)
         "#971015",
       },
 
-      none       = "NONE",
+      none = "NONE",
     }
   end
 end
